@@ -23,17 +23,15 @@ translate([20, 0, 0]) {
 
 translate([50, 0, 0]) {
     // bottom cube
-    cube([25, 15.9, 4]);
+    cube([25, 15.9, 3.5]);
     
     // middle
-    translate ([0, 5.06, 4]) {
-        cube([25, 5.72, 1.25]);
+    translate ([0, 5.06, 3.5]) {
+        cube([25, 5.72, 1.8]);
     }
     
-    translate([0, 0, 5.25]) {
-        cube([25, 15.9, 1.25]);
-    }
-
     // top
-    //cube([]);
+    translate([0, 0, 5.25]) {
+        cube([25, 15.9, 1.4]);
+    }
 }
