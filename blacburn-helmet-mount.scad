@@ -1,8 +1,8 @@
 // base
 cube([16, 35, 2]);
 // tower
-translate([0, 10.5, 2]) {
-    cube([14, 14, 35]);
+translate([5    , 17.5, 2]) {
+    cylinder(35, 5, 5);
 }
 // mount
 translate([20, 0, 0]) {
@@ -29,6 +29,9 @@ translate([50, 0, 0]) {
     translate ([0, 5.06, 2.7]) {
         cube([25, 5.52, 2.4]);
     }
+    
+    // back end of the cube
+    cube([3.5, 15.9, 6]);
     
     // top
     translate([0, 0, 5.05]) {
