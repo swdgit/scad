@@ -1,11 +1,11 @@
 // base
-cube([13, 35, 2]);
+cube([13, 28, 2]);
 // tower
-translate([6.5, 17.5, 2]) {
-    cylinder(30, 5, 5);
+translate([6.5, 15, 2]) {
+    cylinder(28, 5, 5);
     
     // move to the top of the cylinder
-    translate([0, 0, 30]) {
+    translate([0, 0, 28]) {
         cylinder(3, 3.8, 3.8);
     }
     
