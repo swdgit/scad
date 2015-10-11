@@ -1,29 +1,30 @@
 // base
-cube([16, 35, 2]);
+cube([13, 35, 2]);
 // tower
-translate([5    , 17.5, 2]) {
-    cylinder(35, 5, 5);
-}
-// mount
-translate([20, 0, 0]) {
-// subtract side area left
-    difference() {
-        // mount cube
-        cube([25, 15.9, 8]);
-        
-        // 5.5 10 2
-        translate([5, 0, 4]) {
-            cube([20, 5.8, 2.2]);
-            translate([0, 10.5, 0]) {
-                cube([20, 5.8, 2.2]);
-            }
-        }
+translate([6.5, 17.5, 2]) {
+    cylinder(38, 5, 5);
+    
+    // move to the top of the cylinder
+    translate([0, 0, 38]) {
+        cylinder(2,4,4);
     }
+    
 }
-
-translate([50, 0, 0]) {
+// new mount design. 
+// TODO need a plug type design that will hook these together
+// TODO need to re-work the cube to be vertical for easier printing.
+translate([20, 0, 0]) {
     // bottom cube
     cube([25, 15.9, 2.7]);
+
+    translate ([7, 7.95,-3]) {
+        difference() {
+            cylinder(3, 5.25, 5.25);
+            cylinder(2, 4.02, 4.02);
+        }
+    }
+
+    // put in a negative cylinder here.. 
     
     // middle
     translate ([0, 5.06, 2.7]) {
