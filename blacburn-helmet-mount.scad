@@ -2,11 +2,11 @@
 cube([13, 35, 2]);
 // tower
 translate([6.5, 17.5, 2]) {
-    cylinder(38, 5, 5);
+    cylinder(30, 5, 5);
     
     // move to the top of the cylinder
-    translate([0, 0, 38]) {
-        cylinder(2,4,4);
+    translate([0, 0, 30]) {
+        cylinder(3, 3.8, 3.8);
     }
     
 }
@@ -20,7 +20,7 @@ translate([20, 0, 0]) {
     translate ([7, 7.95,-3]) {
         difference() {
             cylinder(3, 5.25, 5.25);
-            cylinder(2, 4.02, 4.02);
+            cylinder(3, 4.02, 4.02);
         }
     }
 
